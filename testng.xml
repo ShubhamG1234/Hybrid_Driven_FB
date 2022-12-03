@@ -3,13 +3,13 @@
 <suite name="Suite">
 
 <listeners>
-	<listener class-name="ExtentListener.ExtentReporter_NG.java"></listener>
+	<listener class-name="ExtentListener.ExtentReporter_NG"></listener>
 </listeners>
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name=".HomePageTest"/>
-      <class name=".LoginPageTest"/>
+      <class name="Tests.HomePageTest"/>
+      <class name="Tests.LoginPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

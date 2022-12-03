@@ -8,10 +8,51 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">120,146</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Tests.HomePageTest</td><td><a href="#m0">HomePageTitleTest</a></td><td rowspan="1">1670037522485</td><td rowspan="1">11330</td></tr><tr class="failedeven"><td><a href="#m1">verifyClickOnLogout</a></td><td rowspan="1">1670037589607</td><td rowspan="1">11027</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Tests.LoginPageTest</td><td><a href="#m2">multipleLoginTest</a></td><td rowspan="1">1670037605205</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Tests.HomePageTest</td><td><a href="#m3">verifyClickOnFriends</a></td><td rowspan="1">1670037556003</td><td rowspan="1">2190</td></tr><tr class="passedeven"><td><a href="#m4">verifyHomePage</a></td><td rowspan="1">1670037565361</td><td rowspan="1">13377</td></tr><tr class="passedeven"><td><a href="#m5">verifyUserNameTest</a></td><td rowspan="1">1670037542007</td><td rowspan="1">6676</td></tr><tr class="passedodd"><td rowspan="3">Tests.LoginPageTest</td><td><a href="#m6">faceBookLogoImageTest</a></td><td rowspan="1">1670037620736</td><td rowspan="1">192</td></tr><tr class="passedodd"><td><a href="#m7">loginPageTitleTest</a></td><td rowspan="1">1670037609824</td><td rowspan="1">205</td></tr><tr class="passedodd"><td><a href="#m8">loginTest</a></td><td rowspan="1">1670037632126</td><td rowspan="1">810</td></tr></tbody>
 </table>
-<h2>Default test</h2></body>
+<h2>Test</h2><h3 id="m0">Tests.HomePageTest#HomePageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Facebook] but found [(13) Facebook]
+	at Tests.HomePageTest.HomePageTitleTest(HomePageTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.HomePageTest#verifyClickOnLogout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;x1lliihq x6ikm8r x10wlt62 x1n2onr6&quot; style=&quot;-webkit-box-orient: vertical; -webkit-line-clamp: 2; display: -webkit-box;&quot;&gt;...&lt;/span&gt; is not clickable at point (199, 357). Other element would receive the click: &lt;div class=&quot;x1uvtmcs x4k7w5x x1h91t0o x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1n2onr6 x1qrby5j x1jfb8zj&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=108.0.5359.71)
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;SVG&apos;, ip: &apos;192.168.45.156&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3d49269fc560d36c277e3f6684fbec, clickElement {id=ec867624-0e36-44e4-8b91-328338a6374b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\SHUBHAM\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63715}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63715/devtoo..., se:cdpVersion: 108.0.5359.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4b3d49269fc560d36c277e3f6684fbec)] -&gt; xpath: (//span[@class=&apos;x1lliihq x6ikm8r x10wlt62 x1n2onr6&apos;])[7]]
+Session ID: 4b3d49269fc560d36c277e3f6684fbec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at pages.HomePage.checkOnLogout(HomePage.java:50)
+	at Tests.HomePageTest.verifyClickOnLogout(HomePageTest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.LoginPageTest#multipleLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Sheet.getLastRowNum()&quot; because &quot;utilities.Test_utility.sheet&quot; is null
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Sheet.getLastRowNum()&quot; because &quot;utilities.Test_utility.sheet&quot; is null
+	at utilities.Test_utility.getTestData(Test_utility.java:42)
+	at Tests.LoginPageTest.getLoginTestData(LoginPageTest.java:49)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.HomePageTest#verifyClickOnFriends</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.HomePageTest#verifyHomePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests.HomePageTest#verifyUserNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Tests.LoginPageTest#faceBookLogoImageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Tests.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Tests.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
 </html>

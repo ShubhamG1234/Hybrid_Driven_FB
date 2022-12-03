@@ -22,30 +22,29 @@ import utilities.Test_utility;
 public class BaseClass {
 	public static Properties prop;
 	public static WebDriver driver;
-	public static EventFiringWebDriver e_driver;
-	public static Web_Utility eventListener;
+//	public static EventFiringWebDriver e_driver;
+//	public static Web_Utility eventListener;
 	public static Logger log = Logger.getLogger(BaseClass.class);
-	
-	public ExtentReports extent =new ExtentReports();
-	public ExtentSparkReporter spark = new ExtentSparkReporter( "test-output/ExtentReport.html");
-	ExtentTest test;
+//	
+//	public ExtentReports extent =new ExtentReports();
+//	public ExtentSparkReporter spark = new ExtentSparkReporter( "test-output/ExtentReport.html");
+//	ExtentTest test;
 
-	public BaseClass() {
+	public BaseClass()  {
+		try {
 		prop = new Properties();
-		FileInputStream ip = null;
-		try {
-			ip = new FileInputStream(
-					"C:\\Users\\SHUBHAM\\eclipse-workspace\\Hybrid_Driven\\src\\main\\java\\config\\config.properties");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-		try {
-			prop.load(ip);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		FileInputStream ip;			
+				ip = new FileInputStream(
+						"C:\\Users\\SHUBHAM\\eclipse-workspace\\Hybrid_Driven\\src\\main\\java\\config\\config.properties");				
+					prop.load(ip);				
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();							
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
-
+	}
 	public static void initialization() {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("Chrome")) {
@@ -59,11 +58,11 @@ public class BaseClass {
 			log.info("Lunching Firefox Browser....");
 		}
 
-		e_driver = new EventFiringWebDriver(driver);
-		
-		eventListener = new Web_Utility();
-		e_driver.register(eventListener);
-		driver = e_driver;
+//		e_driver = new EventFiringWebDriver(driver);
+//		
+//		eventListener = new Web_Utility();
+//		e_driver.register(eventListener);
+//		driver = e_driver;
 
 		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
